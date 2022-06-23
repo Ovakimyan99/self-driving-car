@@ -16,6 +16,10 @@ class Car {
     }
 
     update() {
+        this.#move()
+    }
+
+    #move() {
         // reverse / forward
         if (this.controls.forward) {
             this.speed += this.acceleration
