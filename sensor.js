@@ -14,13 +14,10 @@ class Sensor {
 
         this.readings = []
         for (let i = 0; i < this.rays.length; i++) {
-            console.log(this.#getReading(this.rays[i], roadBorders))
             this.readings.push(
                 this.#getReading(this.rays[i], roadBorders)
             )
         }
-
-        // console.log(this.readings)
     }
 
     #getReading(ray, roadBorders) {
